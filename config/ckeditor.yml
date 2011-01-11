@@ -1,0 +1,14 @@
+default: &default
+  public_path: "#{Rails.root.to_s}/public/uploads"
+  public_uri: /uploads
+  file_manager_uri: /fm/filemanager
+  file_manager_upload_uri: /ckeditor/upload
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
