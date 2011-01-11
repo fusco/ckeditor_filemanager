@@ -11,7 +11,7 @@ rails server
 
 And in your favorite broswer
 
-http://localhost:3000/fm/filemanager?CKEditor=page__body_editor&CKEditorFuncNum=1&langCode=fr&path=/
+http://localhost:3000/
 
 h2. Use
 You can upload, download, rename, remove, create directories, preview pictures files (and show in lightbox) and selected pictures files for ckeditor picture import.
