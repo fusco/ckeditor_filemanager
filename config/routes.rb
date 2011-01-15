@@ -1,14 +1,5 @@
-
-ActionController::Routing::Routes.draw do |map|
-  # for CK Editor
-  map.connect 'fm/filemanager/:action/:id', :controller => 'Fm::Filemanager'
-  map.connect 'ckeditor/command', :controller => 'ckeditor', :action => 'command'
-  map.connect 'ckeditor/upload', :controller => 'ckeditor', :action => 'upload'
-end
-
-
 CkeditorFilemanager::Application.routes.draw do
-
+match '/fm/filemanager/(:action)/(:id)'=> 'Fm::Filemanager#index'
   resources :posts
 
   # The priority is based upon order of creation:
